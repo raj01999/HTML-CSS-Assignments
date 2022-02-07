@@ -1,5 +1,33 @@
 /* Our CSS file. */
 
+.div1{
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    margin: 10px;
+    float: left;
+    padding: 50px;
+}
+.div2{
+    height: 500px;
+    width: 500px;
+    margin: 10px;
+    float: left;
+}
+.div3{
+    height: 500px;
+    width: 500px;
+    margin: 10px;
+    float: left;
+}
+.div4{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    margin: 10px;
+    float: left;
+    padding: 100px;
+}
 
 .container, .content {
 width: 100%;
