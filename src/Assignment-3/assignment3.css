@@ -1,5 +1,57 @@
 /* Our CSS file. */
 
+#container-1{
+    width: 100%;
+    height: 59vh;
+    background-color: #f2f2f2;
+}
+.left-side{
+    float: left;
+    width: 50%;
+    height: 45vh;
+    margin-top: 7vh;
+}
+.right-side{
+    float: right;
+    width: 50%;
+    height: 45vh;
+    margin-top: 7vh;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+h1{
+    text-align: center;
+}
+p{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+button{
+    margin-left: calc(50% - 45px);
+    color: white;
+    background-color: black;
+}
+
+#container-2{
+    width: 100%;
+    height: 90vh;
+    background-color: #f2f2f2;
+    margin-top: 3vh;
+}
+.down-side{
+    width: 50%;
+    height: 45vh;
+    margin-left: 25%;
+    margin-top: 7vh;
+}
+.up-side{
+    width: 100%;
+    height: 25vh;
+    padding-top: 7vh;
+}
 
 .container, .content {
 width: 100%;
