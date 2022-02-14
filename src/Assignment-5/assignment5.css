@@ -49,6 +49,7 @@ button{
     height: 8vh;
     font-size: 0.5rem;
     border-style: none;
+    border-radius: 25px;
 }
 button:hover{
     background-color: green;
