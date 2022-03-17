@@ -7,11 +7,9 @@
 
 .container, .content {
 width: 100%;
-background-color: rgb(167, 255, 167);
 display: flex;
 justify-content: space-around;
-background: url(./Background3h.jpg) no-repeat;
-background-size: cover;
+background-image: linear-gradient(120deg, #95f3f3, #93ceff 25%,#968bf5);
 }
 
 .counter{
@@ -36,10 +34,11 @@ background-size: cover;
     width: 100%;
     height: 75%;
     resize: vertical;
+    background-image: linear-gradient(90deg, #c6d8a1, #d8d7b5 50%,#c2e2e7);
 }
 
-#btn{
-    background-image: linear-gradient(1450deg, #00DDEB, #51749b 50%,#2807ff);
+.btn{
+    background-image: linear-gradient(90deg, #c5ff07, #eb614f 50%,#2807ff);
     width: 100%;
     height: 50px;
     border-radius: 7px;
@@ -47,7 +46,7 @@ background-size: cover;
     font-size: larger;
 }
 
-#btn:hover{
+.btn:hover{
     cursor: pointer;
 }
 
@@ -78,4 +77,17 @@ p{
     border-radius: 20px;
     margin: 10px;
     word-break: break-word;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(90deg, #bdcea4, #c09c9c 50%,#c3bde4);
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+}
+.paragraph{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 25px;
+    border-radius: 10px;
 }
