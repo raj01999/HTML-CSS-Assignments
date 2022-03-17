@@ -7,9 +7,11 @@
 
 .container, .content {
 width: 100%;
-background-color: aquamarine;
+background-color: rgb(167, 255, 167);
 display: flex;
 justify-content: space-around;
+background: url(./Background3h.jpg) no-repeat;
+background-size: cover;
 }
 
 .counter{
@@ -18,6 +20,7 @@ justify-content: space-around;
     height: 70px;
     align-items: center;
     font-size: x-large;
+    color: white;
 }
 
 .leftSide{
@@ -54,6 +57,10 @@ justify-content: space-around;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.para{
+    color: white;
 }
 
 #displayArea{
