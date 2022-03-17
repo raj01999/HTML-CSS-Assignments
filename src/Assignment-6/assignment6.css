@@ -17,6 +17,7 @@ justify-content: space-around;
     justify-content:space-around;
     height: 70px;
     align-items: center;
+    font-size: x-large;
 }
 
 .leftSide{
@@ -40,6 +41,7 @@ justify-content: space-around;
     height: 50px;
     border-radius: 7px;
     margin: 10px 0;
+    font-size: larger;
 }
 
 #btn:hover{
