@@ -9,10 +9,29 @@
 </head>
 
 <body>
-	<div id="container">
+	<div id="container" class="container">
 
 	<!-- Start your code from here -->
 
+	<div class="leftSide">
+		<div class="counter">
+			<div>Characters: <span id="characterCount">0</span></div>
+			<div>Threads: <span id="threadCount">0</span></div>
+		</div>
+
+		<div class="inputArea">
+			<textarea name="input" id="input"></textarea>
+			<button id="btn">Thread</button>
+		</div>
+	</div>
+
+	<div class="rightSide">
+		<p>Your Threads will appear here &#128293;</p>
+		<p>&#9888; The character limit for each threads is 275</p>
+		<div id="displayArea"></div>
+			
+		</div>
+	</div>
 
 	<!-- End your code -->
 
@@ -20,6 +39,67 @@
 
 	<script type="text/javascript">
 	// write your javascript code here
+
+	//This area for counting charecter in text area
+	document.getElementById("input").addEventListener("input", (e)=>{
+		let characterCount = document.getElementById("characterCount");
+		characterCount.innerHTML = input.value.length;
+	});
+
+	
+	// Everything Below here are for populating the documet and Thread count
+	let idx = 1;
+	document.getElementById("btn").addEventListener("click", (e)=>{
+		let li = [];
+		let input = document.getElementById("input");
+
+		// Through aleart on no input
+		if (!input.value.length){
+			alert("Please! give some input");
+			return;
+		}
+
+		let html = input.value[0], count = 0;
+
+	// Deviding the string with 275 chrecter per Thread
+		for(let i=1; i<input.value.length; i++){
+			if (count<274){
+				html += input.value[i];
+				count++;
+			}
+			else{
+				li.push(html);
+				html = input.value[i];
+				count = 0;
+			}
+		}
+		li.push(html);
+
+		populateDom(li);
+
+		input.value = "";
+	});
+
+	// Populating the string to our Dom as Thread
+	function populateDom(list){
+		html = "";
+		list.forEach((str)=>{
+			let displayArea = document.getElementById("displayArea");
+			html = `<h4>Thread: ${idx}</h4>
+					<p>${str}</p>`;
+			
+			let newDiv = document.createElement("div");
+			newDiv.innerHTML = html;
+			newDiv.setAttribute("class", "thread");
+			displayArea.appendChild(newDiv);
+
+			// Counting the Thread
+			let threadCount = document.getElementById("threadCount");
+			threadCount.innerHTML = idx;
+			idx++;
+		})
+	}
+
 
 	</script>
 
