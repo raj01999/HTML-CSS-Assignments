@@ -77,12 +77,12 @@
 				count++;
 			}
 			else{
-				li.push(html);
+				li.push([html, new Date()]);
 				html = input.value[i];
 				count = 1;
 			}
 		}
-		li.push(html);
+		li.push([html, new Date()]);
 
 		populateDom(li);
 
@@ -104,9 +104,9 @@
 			html += `<div class="thread">
 					<div class= "head">
     				<h4>Thread: ${idx+1}</h4>
-					<h6>${new Date()}</h6>
+					<h6>${ele[1]}</h6>
 					</div>
-    				<p class= "paragraph">${ele}</p>
+    				<p class= "paragraph">${ele[0]}</p>
    	 				<button id="btnid${idx}" class="btn" onclick="deleting(this.id)">Delete</button>
 					</div>`;
 		});
