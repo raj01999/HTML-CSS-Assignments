@@ -77,12 +77,12 @@
 				count++;
 			}
 			else{
-				li.push([html, new Date()]);
+				li.push([html, String(new Date()).split("GMT")[0]]);
 				html = input.value[i];
 				count = 1;
 			}
 		}
-		li.push([html, new Date()]);
+		li.push([html, String(new Date()).split("GMT")[0]]);
 
 		populateDom(li);
 
