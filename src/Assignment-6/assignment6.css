@@ -48,6 +48,10 @@ background-image: linear-gradient(120deg, #3b6d6d, #3e5161 25%,#423f5f);
     font-size: larger;
 }
 
+#btn{
+    height: 70px;
+}
+
 .btn:hover{
     cursor: pointer;
 }
